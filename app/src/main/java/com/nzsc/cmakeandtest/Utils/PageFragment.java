@@ -7,7 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.nzsc.cmakeandtest.Activity.R;
+
+import com.nzsc.cmakeandtest.R;
 
 import java.util.Locale;
 /**

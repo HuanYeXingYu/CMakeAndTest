@@ -9,6 +9,7 @@ import eu.inloop.pager.UpdatableFragmentPagerAdapter;
 
 /**
  * Created by 夜墨 on 201/6/14.
+ *
  */
 
 public class MyViewPagerAdapter extends UpdatableFragmentPagerAdapter {

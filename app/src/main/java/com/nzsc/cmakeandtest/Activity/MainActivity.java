@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import com.nzsc.cmakeandtest.Adapter.MyViewPagerAdapter;
 import com.nzsc.cmakeandtest.Base.BaseActivtiy;
+import com.nzsc.cmakeandtest.Fragment.HarmonicFragment;
+import com.nzsc.cmakeandtest.R;
 import com.nzsc.cmakeandtest.Utils.PageFragment;
 import com.nzsc.cmakeandtest.Utils.PageFragment2;
 import com.nzsc.cmakeandtest.View.ScaleTransitionPagerTitleView;
@@ -43,17 +45,16 @@ public class MainActivity extends BaseActivtiy {
     private List<String> titleList;
     private List<Fragment> fragmentList;
     Bundle args = new Bundle();
+
+    public MyViewPagerAdapter getAdapter() {
+        return adapter;
+    }
+
     MyViewPagerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-        //   initMagicIndicator();
-
-
-//
 //        findViewById(R.id.btn_shuffle).setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -99,10 +100,16 @@ public class MainActivity extends BaseActivtiy {
         args.putInt("position", 2);
         fragment3.setArguments(args);
         fragmentList.add(fragment3);
+
         PageFragment2 fragment4 = new PageFragment2();
         args.putInt("position", 3);
         fragment4.setArguments(args);
         fragmentList.add(fragment4);
+
+        HarmonicFragment fragment5 = new HarmonicFragment();
+        args.putInt("position", 4);
+        fragment5.setArguments(args);
+        fragmentList.add(fragment5);
 
     }
 
@@ -156,6 +163,5 @@ public class MainActivity extends BaseActivtiy {
         magicIndicator.setNavigator(commonNavigator);
         ViewPagerHelper.bind(magicIndicator, viewPager);
     }
-
 
 }

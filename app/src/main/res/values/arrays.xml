@@ -2,9 +2,19 @@
 <resources>
 
     <string-array name="viewPagerTitles">
-        <item>这是测试1</item>
-        <item>这是测试2 </item>
-        <item>这是测试3</item>
-        <item>这是测试4</item>
+        <item>常规</item>
+        <item>矢量图 </item>
+        <item>谐波</item>
+        <item>误差</item>
+        <item>其他</item>
+
+    </string-array>
+    <string-array name="sixUI">
+        <item>U1</item>
+        <item>U2 </item>
+        <item>U3</item>
+        <item>I1</item>
+        <item>I2</item>
+        <item>I3</item>
     </string-array>
 </resources>

@@ -1,9 +1,5 @@
 [
     {
-        "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldrtl-xhdpi-v17\\abc_ic_ab_back_mtrl_am_alpha.png",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\c5a0afab986847dc96be9ca7e4fa7708aac0a610\\output\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_ab_back_mtrl_am_alpha.png"
-    },
-    {
         "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },

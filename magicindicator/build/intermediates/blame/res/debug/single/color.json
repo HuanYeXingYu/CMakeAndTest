@@ -36,10 +36,6 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
-        "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\debug\\color\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\c5a0afab986847dc96be9ca7e4fa7708aac0a610\\output\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
         "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
     },
@@ -70,10 +66,6 @@
     {
         "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\color\\abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\debug\\color\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\c5a0afab986847dc96be9ca7e4fa7708aac0a610\\output\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
         "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",

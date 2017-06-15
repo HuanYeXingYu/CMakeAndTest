@@ -16,16 +16,16 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
+        "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
         "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ratingbar_small_material.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
         "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_item_background_holo_light.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_item_background_holo_light.xml"
-    },
-    {
-        "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
         "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_tab_indicator_material.xml",
@@ -68,10 +68,6 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\c5a0afab986847dc96be9ca7e4fa7708aac0a610\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
-    },
-    {
         "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_dialog_material_background.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_dialog_material_background.xml"
     },
@@ -84,10 +80,6 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
         "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_go_search_api_material.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
@@ -96,12 +88,12 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\notification_bg_low.xml"
     },
     {
-        "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_text_cursor_material.xml"
+        "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\c5a0afab986847dc96be9ca7e4fa7708aac0a610\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
+        "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
         "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_bg.xml",
@@ -112,20 +104,16 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\notification_icon_background.xml"
     },
     {
-        "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\c5a0afab986847dc96be9ca7e4fa7708aac0a610\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
-    },
-    {
         "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
-        "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
         "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\5cf46627af7c510f74795e814f0af56f8b06bed0\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
         "merged": "H:\\Test\\CMakeAndTest\\magicindicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_spinner_textfield_background_material.xml",

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="viewPagerTitles">
+        <item>这是测试1</item>
+        <item>这是测试2 </item>
+        <item>这是测试3</item>
+        <item>这是测试4</item>
+    </string-array>
+</resources>

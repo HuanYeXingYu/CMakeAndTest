@@ -3,14 +3,17 @@ package com.nzsc.cmakeandtest.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
+import android.widget.Toast;
 
-import com.nzsc.cmakeandtest.Adapter.ExamplePagerAdapter;
-
+import com.nzsc.cmakeandtest.Adapter.MyViewPagerAdapter;
+import com.nzsc.cmakeandtest.Base.BaseActivtiy;
+import com.nzsc.cmakeandtest.Utils.PageFragment;
+import com.nzsc.cmakeandtest.Utils.PageFragment2;
 import com.nzsc.cmakeandtest.View.ScaleTransitionPagerTitleView;
 
 import net.lucode.hackware.magicindicator.MagicIndicator;
@@ -23,52 +26,116 @@ import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTit
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.SimplePagerTitleView;
 
-
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
-    private static final String[] CHANNELS = new String[]{"KITKAT", "NOUGAT", "DONUT"};
-    private List<String> mDataList = Arrays.asList(CHANNELS);
-    private ExamplePagerAdapter mExamplePagerAdapter = new ExamplePagerAdapter(mDataList);
+import butterknife.BindView;
 
-    private ViewPager mViewPager;
+import static android.view.Gravity.CENTER;
+
+public class MainActivity extends BaseActivtiy {
+    @BindView(R.id.magic_indicator)
+    MagicIndicator magicIndicator;
+    @BindView(R.id.view_pager)
+    ViewPager viewPager;
+
+    private List<String> titleList;
+    private List<Fragment> fragmentList;
+    Bundle args = new Bundle();
+    MyViewPagerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        mViewPager = (ViewPager) findViewById(R.id.view_pager);
-        mViewPager.setAdapter(mExamplePagerAdapter);
 
 
-        initMagicIndicator2();
+        //   initMagicIndicator();
+
+
+//
+//        findViewById(R.id.btn_shuffle).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Collections.shuffle(sDataSet);
+//                adapter.notifyDataSetChanged();
+//            }
+//        });
+//        findViewById(R.id.btn_add).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                sDataSet.add(sDataSet.size());
+//                adapter.notifyDataSetChanged();
+//            }
+//        });
+    }
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected void initView() {
 
     }
 
-    private void initMagicIndicator2() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator2);
+    @Override
+    protected void initData() {
+        fragmentList = new ArrayList<>();
+        //初始化title
+        String[] titles = getResources().getStringArray(R.array.viewPagerTitles);
+        titleList = Arrays.asList(titles);
+        //初始化Fragment
+        PageFragment fragment1 = new PageFragment();
+        args.putInt("position", 0);
+        fragment1.setArguments(args);
+        fragmentList.add(fragment1);
+        PageFragment2 fragment2 = new PageFragment2();
+        args.putInt("position", 1);
+        fragment2.setArguments(args);
+        fragmentList.add(fragment2);
+        PageFragment fragment3 = new PageFragment();
+        args.putInt("position", 2);
+        fragment3.setArguments(args);
+        fragmentList.add(fragment3);
+        PageFragment2 fragment4 = new PageFragment2();
+        args.putInt("position", 3);
+        fragment4.setArguments(args);
+        fragmentList.add(fragment4);
+
+    }
+
+    @Override
+    protected void initEvent() {
+        adapter = new MyViewPagerAdapter(getSupportFragmentManager(), titleList, fragmentList);
+        viewPager.setAdapter(adapter);
+        initMagicIndicator();
+
+    }
+
+    private void initMagicIndicator() {
         magicIndicator.setBackgroundColor(Color.WHITE);
         CommonNavigator commonNavigator = new CommonNavigator(this);
         commonNavigator.setAdjustMode(true);
         commonNavigator.setAdapter(new CommonNavigatorAdapter() {
             @Override
             public int getCount() {
-                return mDataList == null ? 0 : mDataList.size();
+                return titleList.size();
             }
 
             @Override
             public IPagerTitleView getTitleView(Context context, final int index) {
                 SimplePagerTitleView simplePagerTitleView = new ScaleTransitionPagerTitleView(context);
-                simplePagerTitleView.setText(mDataList.get(index));
+                simplePagerTitleView.setText(titleList.get(index));
+
                 simplePagerTitleView.setTextSize(18);
-                simplePagerTitleView.setNormalColor(Color.parseColor("#616161"));
-                simplePagerTitleView.setSelectedColor(Color.parseColor("#f57c00"));
+                simplePagerTitleView.setNormalColor(Color.parseColor("#FF4081"));
+                simplePagerTitleView.setSelectedColor(Color.parseColor("#3F51B5"));
                 simplePagerTitleView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        mViewPager.setCurrentItem(index);
+                        viewPager.setCurrentItem(index);
                     }
                 });
                 return simplePagerTitleView;
@@ -79,25 +146,15 @@ public class MainActivity extends AppCompatActivity {
                 LinePagerIndicator indicator = new LinePagerIndicator(context);
                 indicator.setStartInterpolator(new AccelerateInterpolator());
                 indicator.setEndInterpolator(new DecelerateInterpolator(1.6f));
-                indicator.setYOffset(UIUtil.dip2px(context, 39));
+              //  indicator.setYOffset(UIUtil.dip2px(context, 39));//设置使下划线显示在上面
                 indicator.setLineHeight(UIUtil.dip2px(context, 1));
                 indicator.setColors(Color.parseColor("#f57c00"));
                 return indicator;
             }
 
-            @Override
-            public float getTitleWeight(Context context, int index) {
-                if (index == 0) {
-                    return 2.0f;
-                } else if (index == 1) {
-                    return 1.2f;
-                } else {
-                    return 1.0f;
-                }
-            }
         });
         magicIndicator.setNavigator(commonNavigator);
-        ViewPagerHelper.bind(magicIndicator, mViewPager);
+        ViewPagerHelper.bind(magicIndicator, viewPager);
     }
 
 

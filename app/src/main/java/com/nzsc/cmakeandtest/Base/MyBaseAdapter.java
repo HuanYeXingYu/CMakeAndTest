@@ -27,6 +27,20 @@ public abstract class MyBaseAdapter<E> extends BaseAdapter {
         inflater = LayoutInflater.from(context);
     }
 
+    public void clear() {
+        contentList.clear();
+
+    }
+
+    public void add(E content) {
+        contentList.add(content);
+    }
+
+    public void addAll(List<E> coList) {
+        contentList.clear();
+        contentList.addAll(coList);
+        notifyDataSetChanged();
+    }
 
     @Override
     public int getCount() {
@@ -45,9 +59,6 @@ public abstract class MyBaseAdapter<E> extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
-
-
         return getMyView(position, convertView, parent);
     }
 

@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.nzsc.cmakeandtest.Base.MyBaseAdapter;
+import com.nzsc.cmakeandtest.Entity.HarmTime;
 import com.nzsc.cmakeandtest.R;
 
 import java.util.List;
@@ -17,15 +18,16 @@ import butterknife.ButterKnife;
  * Created by 夜墨 on 2017/6/15.
  */
 
-public class TestAfapter extends MyBaseAdapter<String> {
+public class TestAfapter extends MyBaseAdapter<HarmTime> {
 
-    public TestAfapter(Context context, List<String> contentList) {
+
+    public TestAfapter(Context context, List<HarmTime> contentList) {
         super(context, contentList);
     }
 
     @Override
     public View getMyView(int position, View convertView, ViewGroup parent) {
-        String text = getItem(position);
+        HarmTime text = getItem(position);
         final ViewHolder vh;
         if (convertView == null) {
             convertView = inflater.inflate(R.layout.item_harm_buttom, null);
@@ -34,16 +36,19 @@ public class TestAfapter extends MyBaseAdapter<String> {
         } else {
             vh = (ViewHolder) convertView.getTag();
         }
-        vh.itemSixUI.setText(text);
+        vh.timeContent.setText(text.getTime_content());
+        vh.timeId.setText(text.getTime_id());
 
         return convertView;
 
     }
 
 
-     static class ViewHolder {
-        @BindView(R.id.item_sixUI)
-        TextView itemSixUI;
+    static class ViewHolder {
+        @BindView(R.id.time_content)
+        TextView timeContent;
+        @BindView(R.id.time_id)
+        TextView timeId;
 
         ViewHolder(View view) {
             ButterKnife.bind(this, view);

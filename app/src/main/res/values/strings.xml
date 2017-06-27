@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CMakeAndTest</string>
+    <string name="harm_time_id">第%1$s次：</string>
+    <string name="lostAct">失真度：-----</string>
 </resources>

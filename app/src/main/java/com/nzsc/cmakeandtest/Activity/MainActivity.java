@@ -12,7 +12,11 @@ import android.widget.Toast;
 
 import com.nzsc.cmakeandtest.Adapter.MyViewPagerAdapter;
 import com.nzsc.cmakeandtest.Base.BaseActivtiy;
+import com.nzsc.cmakeandtest.Fragment.ErrorFragment;
 import com.nzsc.cmakeandtest.Fragment.HarmonicFragment;
+import com.nzsc.cmakeandtest.Fragment.OtherFragment;
+import com.nzsc.cmakeandtest.Fragment.RoutineFragment;
+import com.nzsc.cmakeandtest.Fragment.VectorgraphFragment;
 import com.nzsc.cmakeandtest.R;
 import com.nzsc.cmakeandtest.Utils.PageFragment;
 import com.nzsc.cmakeandtest.Utils.PageFragment2;
@@ -88,25 +92,27 @@ public class MainActivity extends BaseActivtiy {
         String[] titles = getResources().getStringArray(R.array.viewPagerTitles);
         titleList = Arrays.asList(titles);
         //初始化Fragment
-        PageFragment fragment1 = new PageFragment();
+        RoutineFragment fragment1 = new RoutineFragment();
         args.putInt("position", 0);
         fragment1.setArguments(args);
         fragmentList.add(fragment1);
-        PageFragment2 fragment2 = new PageFragment2();
+
+        VectorgraphFragment fragment2 = new VectorgraphFragment();
         args.putInt("position", 1);
         fragment2.setArguments(args);
         fragmentList.add(fragment2);
-        PageFragment fragment3 = new PageFragment();
+
+        HarmonicFragment fragment3 = new HarmonicFragment();
         args.putInt("position", 2);
         fragment3.setArguments(args);
         fragmentList.add(fragment3);
 
-        PageFragment2 fragment4 = new PageFragment2();
+        ErrorFragment fragment4 = new ErrorFragment();
         args.putInt("position", 3);
         fragment4.setArguments(args);
         fragmentList.add(fragment4);
 
-        HarmonicFragment fragment5 = new HarmonicFragment();
+        OtherFragment fragment5 = new OtherFragment();
         args.putInt("position", 4);
         fragment5.setArguments(args);
         fragmentList.add(fragment5);

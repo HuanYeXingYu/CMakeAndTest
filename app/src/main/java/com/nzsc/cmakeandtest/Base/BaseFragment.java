@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import com.nzsc.cmakeandtest.Activity.MainActivity;
 import com.nzsc.cmakeandtest.Adapter.MyViewPagerAdapter;
 
+import java.math.BigDecimal;
+
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
@@ -20,8 +22,9 @@ import butterknife.Unbinder;
 
 public abstract class BaseFragment extends Fragment {
     public Unbinder unbinder;
-    public  View rootView; // 缓存Fragment view
-public MyViewPagerAdapter myViewPagerAdapter;
+    public View rootView; // 缓存Fragment view
+    public MyViewPagerAdapter myViewPagerAdapter;
+
     /**
      * 初始化布局
      */
@@ -49,10 +52,11 @@ public MyViewPagerAdapter myViewPagerAdapter;
     }
 
 
-
-
-
-
+    public static double mul(double num1, int num2) {
+        BigDecimal bd = new BigDecimal(Double.toString(num1));
+        BigDecimal bd2 = new BigDecimal(num2);
+        return bd.multiply(bd2).doubleValue();
+    }
 
 
 }

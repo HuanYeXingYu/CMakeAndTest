@@ -8,4 +8,43 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="child_textView">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+    <style name="child_textView_lowSize">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+    <style name="child_textView_rank1">
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:layout_marginLeft">10sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="child_textView_rank2">
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10sp</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="child_textView_rank3">
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:layout_marginLeft">10sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
 </resources>

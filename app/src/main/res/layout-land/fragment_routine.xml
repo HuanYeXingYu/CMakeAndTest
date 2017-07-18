@@ -7,198 +7,184 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tv_mode"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="0dp"
-        android:gravity="center"
+        android:id="@+id/routine_tv_mode"
+        style="@style/child_textView"
+android:gravity="start"
         android:text="接线方式："
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline11"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/guideline20"
+
+        app:layout_constraintLeft_toLeftOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761" />
-
-    <TextView
-        android:id="@+id/tvPulseOutputSet"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="16dp"
-        android:text="脉冲输出设置："
-        android:textSize="25sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tbPulseSetting"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/guideline20"
-        android:layout_marginRight="8dp" />
-
-    <TextView
-        android:id="@+id/tvCurrentRange"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:text="电流量程设置（A）："
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline16"
-        app:layout_constraintVertical_bias="0.466"
-        app:layout_constraintRight_toLeftOf="@+id/guideline20"
-        android:layout_marginRight="8dp" />
-
-    <TextView
-        android:id="@+id/tvConstant"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:gravity="center"
-        android:text="常数："
-        android:textSize="25sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tvConstantSet"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/guideline20" />
-
-    <TextView
-        android:id="@+id/tvVersion"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="16dp"
-        android:gravity="center"
-        android:text="版本号："
-        android:textSize="25sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tvVersionSet"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/guideline20" />
-
-    <TextView
-        android:id="@+id/tvVersionSet"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:text="TextView"
-        android:textSize="25sp"
+        android:layout_marginTop="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline20"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline18"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintHorizontal_bias="0.0" />
 
-    <ToggleButton
-        android:id="@+id/tbPulseSetting"
+    <TextView
+        android:id="@+id/routine_tv_output"
+        style="@style/child_textView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="8dp"
-        android:text="ToggleButton"
-        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:text="脉冲输出设置："
+        app:layout_constraintLeft_toLeftOf="@+id/guideline5"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline17"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline20" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/routine_tv_range"
+        style="@style/child_textView"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+
+        android:text="电流量程设置(A)："
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/routine_tv_constant"
+        style="@style/child_textView"
+        android:layout_width="wrap_content"
+
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+
+        android:text="常数："
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_routine_constant"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/routine_tv_version"
+        style="@style/child_textView"
+        android:layout_width="wrap_content"
+
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+
+        android:text="版本号："
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_routine_version"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_routine_version"
+        style="@style/child_textView"
+        android:text="V2017.07.14.14"
+        android:gravity="end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/routine_tv_version"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <Spinner
-        android:id="@+id/spCurrentRange"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline16"
-        app:layout_constraintVertical_bias="0.444"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline20" />
+        android:id="@+id/spn_routine_outputSetting"
+        style="@style/child_textView"
 
-    <TextView
-        android:id="@+id/tvConstantSet"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:text="TextView"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline18"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline20"
+        android:layout_height="36dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
-        app:layout_constraintVertical_bias="0.4" />
-
-    <ListView
-
-        android:id="@+id/lv_routine"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline17"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/routine_tv_output"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spn_routine_rangeSetting"
+        style="@style/child_textView"
+        android:layout_height="36dp"
+        android:layout_marginRight="8dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/routine_tv_range"
+
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline11" />
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tv_routine_constant"
+        style="@style/child_textView"
+        android:text="72,0000,0000"
+        android:gravity="end"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintLeft_toRightOf="@+id/routine_tv_constant"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginRight="8dp"
+        app:layout_constraintVertical_bias="0.0" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.81" />
+        app:layout_constraintGuide_percent="0.82" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guideline18"
+        android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9" />
+        app:layout_constraintGuide_percent="0.91" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guideline11"
+        android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.09" />
+        app:layout_constraintGuide_percent="0.73" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guideline16"
+        android:id="@+id/guideline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.72" />
+        app:layout_constraintGuide_percent="0.64" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guideline17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.63" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline20"
+        android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
+        app:layout_constraintGuide_percent="0.0" />
 
+    <ListView
+
+        android:id="@+id/lv_routine_connectionMode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="0dp"
+        android:divider="@null"
+        android:listSelector="#CA8EC2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintLeft_toLeftOf="@+id/guideline5"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/routine_tv_mode" />
 </android.support.constraint.ConstraintLayout>

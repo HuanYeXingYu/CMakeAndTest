@@ -6,129 +6,104 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
     <TextView
-        android:id="@+id/tv_harm"
+        android:id="@+id/harmonic_tv_choose"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="10dp"
-        android:hint="请旋转圆点选择"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/tvPleaseChoose"
-        android:layout_marginLeft="0dp"
-        app:layout_constraintHorizontal_bias="0.0" />
-
-
-    <com.nzsc.cmakeandtest.View.CircleIndexView
-        android:id="@+id/circle_index_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-
-        android:layout_marginRight="10dp"
-
-
-        android:background="#00000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        android:layout_marginEnd="10dp">
-
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/abc_btn_switch_to_on_mtrl_00012"
-            android:contentDescription="" />
-
-    </com.nzsc.cmakeandtest.View.CircleIndexView>
-
-
-    <TextView
-        android:id="@+id/tvPleaseChoose"   android:textSize="25sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
         android:text="谐波选择："
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="10dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tv_harm" />
-
-    <TextView
-        android:id="@+id/firstChoose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        android:text="第01到16次"
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/secondChoose"
-        app:layout_constraintTop_toBottomOf="@+id/tvPleaseChoose"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/secondChoose"
+        android:id="@+id/tv_harmonic_leftTo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="30dp"
-
-        android:text="第17到31次"
+        android:text="第01到16次"
         android:textSize="25sp"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBaseline_toBaselineOf="@+id/firstChoose" />
-
-    <GridView
-        android:id="@+id/gv_harmonic"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="7dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:numColumns="2"
-        app:layout_constraintBottom_toTopOf="@+id/tv_lostAct"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondChoose" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline4"
+        app:layout_constraintRight_toLeftOf="@+id/tv_harmonic_rightTo"
+        app:layout_constraintTop_toBottomOf="@+id/harmonic_tv_choose"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/tv_lostAct"
+        android:id="@+id/tv_harmonic_rightTo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+
+        android:layout_marginRight="30dp"
+        android:text="第17到31次"
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_harmonic_leftTo"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_harmonic_lost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="@string/lostAct"
         android:textSize="25sp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline4"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="6dp"
-        app:layout_constraintBottom_toTopOf="@+id/circle_index_view"
-        app:layout_constraintHorizontal_bias="0.557"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <GridView
+        android:id="@+id/gv_harmonic_times"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:numColumns="2"
+        app:layout_constraintBottom_toTopOf="@+id/tv_harmonic_lost"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_harmonic_rightTo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spn_harmonic_mode"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/harmonic_tv_choose"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 </android.support.constraint.ConstraintLayout>

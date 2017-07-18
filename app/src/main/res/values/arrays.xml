@@ -17,4 +17,12 @@
         <item>I2</item>
         <item>I3</item>
     </string-array>
+    <string-array name="ConnectWay">
+        <item>三相四线有功</item>
+        <item>三相四线真无功 </item>
+        <item>三相三线有功</item>
+        <item>三相三线真无功</item>
+        <item>三相四线无功</item>
+        <item>三相三线无功</item>
+    </string-array>
 </resources>

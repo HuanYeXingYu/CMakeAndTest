@@ -3,13 +3,12 @@ package com.nzsc.cmakeandtest.Fragment;
 import android.view.View;
 import android.widget.GridView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.nzsc.cmakeandtest.Adapter.TestAfapter;
 import com.nzsc.cmakeandtest.Base.BaseFragment;
+import com.nzsc.cmakeandtest.Entity.ComBean;
 import com.nzsc.cmakeandtest.Entity.HarmTime;
 import com.nzsc.cmakeandtest.R;
-import com.nzsc.cmakeandtest.View.CircleIndexView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,28 +21,29 @@ import butterknife.Unbinder;
  */
 
 public class HarmonicFragment extends BaseFragment implements View.OnClickListener {
-    @BindView(R.id.tv_harm)
-    TextView tvHarm;
-    @BindView(R.id.gv_harmonic)
+
+    @BindView(R.id.gv_harmonic_times)
     GridView gvHarmonic;
 
     TestAfapter adapter;
-    @BindView(R.id.circle_index_view)
-    CircleIndexView circleIndexView;
-    @BindView(R.id.firstChoose)
+    @BindView(R.id.tv_harmonic_leftTo)
     TextView firstChoose;
-    @BindView(R.id.secondChoose)
+    @BindView(R.id.tv_harmonic_rightTo)
     TextView secondChoose;
     Unbinder unbinder;
     static int start = 0;
     List<HarmTime> harmList;
-    @BindView(R.id.tv_lostAct)
-    TextView tvLostAct;
+
 
 
     @Override
     protected int getLayoutRes() {
         return R.layout.fragment_harmonic;
+    }
+
+    @Override
+    protected void onDataReceived() {
+
     }
 
     @Override
@@ -69,23 +69,7 @@ public class HarmonicFragment extends BaseFragment implements View.OnClickListen
     protected void initListener() {
         firstChoose.setOnClickListener(this);
         secondChoose.setOnClickListener(this);
-        tvHarm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                CircleIndexView.ifNeedData = false;
-            }
-        });
-        circleIndexView.setOnIndexChangeListener(new CircleIndexView.OnIndexChangeListener() {
-            @Override
-            public void onIndexChange(String letter, boolean ifShow) {
-                tvHarm.setText(letter);
-            }
 
-            @Override
-            public void indexChangeFinish(final String itemChoose) {
-                Toast.makeText(getActivity(), "eeeeeee", Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 
 
@@ -94,7 +78,7 @@ public class HarmonicFragment extends BaseFragment implements View.OnClickListen
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.firstChoose:
+            case R.id.tv_harmonic_leftTo:
                 if (start == 1) {
                     break;
                 }
@@ -109,7 +93,7 @@ public class HarmonicFragment extends BaseFragment implements View.OnClickListen
                     harmList.add(new HarmTime(getContext().getString(R.string.harm_time_id, i + start + ""), mul(0.3, i) + ""));
                 }
                 break;
-            case R.id.secondChoose:
+            case R.id.tv_harmonic_rightTo:
                 if (start == 17) {
                     break;
                 }
